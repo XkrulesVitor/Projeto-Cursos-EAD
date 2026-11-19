@@ -29,7 +29,7 @@ const sqlTextArray = (arr = []) => {
 
 const lines = [
   "-- =============================================================================",
-  "-- Seed oficial do catalogo Cursos EAD (26 trilhas, 94 cursos, 573 horas)",
+  "-- Seed oficial do catalogo Cursos EAD (25 trilhas, 92 cursos, 564 horas)",
   "-- Execute no SQL Editor do Supabase apos rodar supabase/schema.sql.",
   "-- =============================================================================",
   "",

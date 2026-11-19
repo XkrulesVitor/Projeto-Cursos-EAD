@@ -270,14 +270,14 @@ export function CatalogSection() {
             </h3>
             <p className="mt-2 max-w-md text-sm text-[var(--muted)]">
               Tente buscar por outro termo (como React, Python, Dados ou Vibe Coding) ou
-              limpe os filtros ativos para visualizar as 26 trilhas.
+              limpe os filtros ativos para visualizar as {courses.length} trilhas.
             </p>
             <button
               type="button"
               onClick={resetFilters}
               className="mt-6 inline-flex h-10 items-center justify-center rounded-lg bg-[var(--primary)] px-5 text-sm font-semibold text-[var(--primary-ink)] hover:bg-[var(--primary-hover)]"
             >
-              Mostrar todas as 26 trilhas
+              Mostrar todas as {courses.length} trilhas
             </button>
           </div>
         ) : (

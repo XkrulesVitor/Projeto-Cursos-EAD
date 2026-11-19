@@ -18,9 +18,9 @@ export const FAQ_ITEMS: FaqItem[] = [
   {
     id: "origem-trilhas",
     category: "Conteúdo",
-    question: "De onde vêm as 26 trilhas e as cargas horárias do catálogo?",
+    question: "De onde vêm as 25 trilhas e as cargas horárias do catálogo?",
     answer:
-      "O catálogo reúne todas as 26 trilhas estruturadas no Núcleo de Projetos (NP), somando 94 cursos e 573 horas de capacitação técnica em desenvolvimento web, back-end, mobile, engenharia de software, dados, nuvem, IA generativa e vibe coding.",
+      "O catálogo reúne 25 trilhas técnicas estruturadas no Núcleo de Projetos (NP), somando 92 cursos e 564 horas de capacitação em desenvolvimento web, back-end, mobile, engenharia de software, dados, nuvem, IA generativa e vibe coding.",
   },
   {
     id: "precos-promocoes",
@@ -48,7 +48,7 @@ export const FAQ_ITEMS: FaqItem[] = [
     category: "Conteúdo",
     question: "Preciso saber programar antes de começar?",
     answer:
-      "Não. A trilha Onboarding (9h) e a trilha Dev Toolkit (12h) foram desenhadas exatamente para quem está dando os primeiros passos. Trilhas intermediárias e avançadas listam claramente os pré-requisitos na aba de ementa antes da matrícula.",
+      "Não. A trilha Dev Toolkit (12h) e a trilha Python (17h) foram desenhadas exatamente para quem está dando os primeiros passos. Trilhas intermediárias e avançadas listam claramente os pré-requisitos na aba de ementa antes da matrícula.",
   },
   {
     id: "integracao-supabase",

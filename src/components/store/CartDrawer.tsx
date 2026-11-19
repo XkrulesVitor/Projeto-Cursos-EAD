@@ -118,7 +118,7 @@ export function CartDrawer() {
                     Seu carrinho está vazio
                   </h3>
                   <p className="mt-1.5 max-w-[30ch] text-sm text-[var(--muted)]">
-                    Explore as 26 trilhas do Núcleo de Projetos, incluindo ofertas a partir de R$ 49,99.
+                    Explore as 25 trilhas do Núcleo de Projetos, incluindo ofertas a partir de R$ 49,99.
                   </p>
                   <button
                     type="button"

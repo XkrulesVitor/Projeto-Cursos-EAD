@@ -16,7 +16,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Cursos EAD | Trilhas de Engenharia de Software, Web, Back-End e IA",
   description:
-    "Loja de trilhas de capacitação técnica do Núcleo de Projetos: 26 trilhas, 94 cursos e 573 horas em Web, Back-End, Software, Dados, Cloud e Vibe Coding.",
+    "Loja de trilhas de capacitação técnica do Núcleo de Projetos: 25 trilhas, 92 cursos e 564 horas em Web, Back-End, Software, Dados, Cloud e Vibe Coding.",
 };
 
 // Script inline para evitar flash de tema claro/escuro antes da hidratacao React

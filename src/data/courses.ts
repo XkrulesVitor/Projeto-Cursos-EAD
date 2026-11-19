@@ -1,5 +1,5 @@
-// Catálogo completo das 26 trilhas do Núcleo de Projetos (NP - Corporative)
-// Total real: 26 trilhas, 90 cursos e 553 horas de carga horária
+// Catálogo completo das 25 trilhas do Núcleo de Projetos (NP - Corporative)
+// Total real: 25 trilhas, 92 cursos e 564 horas de carga horária
 
 import type { CategoryMeta, CouponCode, CourseTrack } from "@/types/course";
 
@@ -43,7 +43,7 @@ export const COURSE_CATEGORIES: CategoryMeta[] = [
     id: "fundamentos",
     label: "Fundamentos & Ferramentas",
     shortLabel: "Fundamentos",
-    description: "Onboarding técnico, produtividade diária com Dev Toolkit e domínio total do GitHub.",
+    description: "Produtividade diária com Dev Toolkit e domínio total do ecossistema Git e GitHub.",
     image: "/images/cat-foundations.jpg",
   },
 ];
@@ -68,56 +68,8 @@ export const STORE_COUPONS: CouponCode[] = [
 
 export const COURSES: CourseTrack[] = [
   // =========================================================================
-  // 1. FUNDAMENTOS & FERRAMENTAS (3 trilhas)
+  // 1. FUNDAMENTOS & FERRAMENTAS (2 trilhas)
   // =========================================================================
-  {
-    id: "onboarding",
-    slug: "onboarding",
-    title: "Onboarding",
-    tagline: "Comece por aqui: cultura de engenharia, fluxo de projetos e ambiente pronto.",
-    description:
-      "A porta de entrada oficial do Núcleo de Projetos. Você configura seu ambiente de desenvolvimento, aprende o fluxo de entrega em equipe e entende como sair do briefing até o primeiro deploy com autonomia.",
-    category: "fundamentos",
-    level: "Iniciante",
-    courseCount: 2,
-    totalHours: 9,
-    npPoints: 30,
-    price: 49.99,
-    originalPrice: 79.9,
-    badge: "Comece por aqui",
-    featured: true,
-    image: "/images/courses/onboarding.jpg",
-    imageAlt: "Cubos modulares anodizados escuros conduzindo ao bloco-farol laranja de entrada",
-    stack: ["VS Code", "Terminal", "Git", "Boas Práticas", "Documentação"],
-    outcomes: [
-      "Configurar um ambiente de trabalho produtivo do zero",
-      "Organizar tarefas, requisitos e comunicação técnica em projetos reais",
-      "Entender o ciclo de vida de software e o padrão de qualidade do NP",
-    ],
-    prerequisites: ["Nenhum conhecimento prévio em programação é obrigatório"],
-    modules: [
-      {
-        id: "onboarding-m1",
-        title: "Cultura Técnica, Requisitos e Fluxo de Projetos",
-        hours: 4,
-        topics: [
-          "Estrutura de squads, papéis e cerimoniais enxutos",
-          "Leitura de escopo, critérios de aceite e quebra de demandas",
-          "Comunicação assíncrona, revisão e entrega contínua",
-        ],
-      },
-      {
-        id: "onboarding-m2",
-        title: "Setup Profissional do Ambiente de Desenvolvimento",
-        hours: 5,
-        topics: [
-          "Terminal moderno, variáveis de ambiente e gestores de versão",
-          "Configuração de editor, formatadores, linters e extensões essenciais",
-          "Primeiro repositório versionado e publicação guiada",
-        ],
-      },
-    ],
-  },
   {
     id: "dev-toolkit",
     slug: "dev-toolkit",
@@ -289,7 +241,7 @@ export const COURSES: CourseTrack[] = [
       "Criar layouts responsivos com CSS Grid, Flexbox, tokens e modo claro/escuro",
       "Consumir APIs REST e manipular estado da interface com JavaScript moderno",
     ],
-    prerequisites: ["Lógica básica de programação ou conclusão do Onboarding"],
+    prerequisites: ["Lógica básica de programação e familiaridade com editor de código"],
     modules: [
       {
         id: "fe-m1",
@@ -1625,7 +1577,7 @@ export const COURSES: CourseTrack[] = [
   },
 ];
 
-// Métricas reais agregadas dinamicamente a partir das 26 trilhas
+// Métricas reais agregadas dinamicamente a partir das 25 trilhas
 export const CATALOG_STATS = {
   totalTracks: COURSES.length,
   totalCourses: COURSES.reduce((acc, item) => acc + item.courseCount, 0),

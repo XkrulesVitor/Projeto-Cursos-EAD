@@ -18,7 +18,7 @@ import {
 
 const PROMO_IDS = [
   "react-react-native",
-  "onboarding",
+  "linguagem-go",
   "dev-toolkit",
   "backend-nodejs",
   "qualidade-testes-software",

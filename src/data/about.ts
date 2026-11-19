@@ -42,7 +42,7 @@ export const AUTHOR_PROFILE = {
       role: "Coordenador de P&D e Gerente de Projetos",
       organization: "CP2eJr (Núcleo de Projetos)",
       detail:
-        "Liderança do ciclo de Pesquisa e Desenvolvimento e arquitetura da plataforma interna CP2eJR - Corporative, origem das 26 trilhas técnicas deste catálogo.",
+        "Liderança do ciclo de Pesquisa e Desenvolvimento e arquitetura da plataforma interna CP2eJR - Corporative, origem das 25 trilhas técnicas deste catálogo.",
       url: "https://cp2ejr.com.br/",
     },
     {
@@ -84,7 +84,7 @@ export const AUTHOR_PROFILE = {
     {
       name: "Projeto-Cursos-EAD",
       language: "TypeScript / Next.js",
-      description: "E-commerce estático das 26 trilhas do Núcleo de Projetos preparado para Supabase e GitHub Pages.",
+      description: "E-commerce estático das 25 trilhas do Núcleo de Projetos preparado para Supabase e GitHub Pages.",
       url: "https://github.com/XkrulesVitor/Projeto-Cursos-EAD",
       highlight: "Este projeto",
     },

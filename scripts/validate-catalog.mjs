@@ -25,8 +25,8 @@ const coursesSection = raw.split("export const COURSES: CourseTrack[] = [")[1] ?
 
 // Extrai cada bloco de curso dentro de COURSES
 const trackBlocks = coursesSection.split(/\n  \{\n    id: "/).slice(1);
-if (trackBlocks.length !== 26) {
-  console.error(`ERRO: Esperadas 26 trilhas, encontradas ${trackBlocks.length}.`);
+if (trackBlocks.length !== 25) {
+  console.error(`ERRO: Esperadas 25 trilhas, encontradas ${trackBlocks.length}.`);
   process.exit(1);
 }
 
@@ -96,12 +96,12 @@ for (const block of trackBlocks) {
   totalHours += trackHours;
 }
 
-if (totalCourses !== 94) {
-  console.error(`ERRO: Esperados 94 cursos no total, encontrados ${totalCourses}.`);
+if (totalCourses !== 92) {
+  console.error(`ERRO: Esperados 92 cursos no total, encontrados ${totalCourses}.`);
   process.exit(1);
 }
-if (totalHours !== 573) {
-  console.error(`ERRO: Esperadas 573 horas no total, encontradas ${totalHours}.`);
+if (totalHours !== 564) {
+  console.error(`ERRO: Esperadas 564 horas no total, encontradas ${totalHours}.`);
   process.exit(1);
 }
 if (!has4999 || !has24999 || !has50 || !has250) {
@@ -119,5 +119,5 @@ for (const file of walkFiles(srcDir)) {
 }
 
 console.log(
-  `OK: 26 trilhas, ${totalCourses} cursos, ${totalHours}h validadas, precos R$ 49,99 a R$ 250,00 e zero em-dashes.`,
+  `OK: 25 trilhas, ${totalCourses} cursos, ${totalHours}h validadas, precos R$ 49,99 a R$ 250,00 e zero em-dashes.`,
 );

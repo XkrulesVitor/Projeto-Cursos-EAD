@@ -1,13 +1,13 @@
 # Cursos EAD
 
-E-commerce de trilhas técnicas de desenvolvimento de software, web, back-end, dados, nuvem, IA generativa e vibe coding baseado nas **26 trilhas do Núcleo de Projetos (NP)** (94 cursos e 573 horas).
+E-commerce de trilhas técnicas de desenvolvimento de software, web, back-end, dados, nuvem, IA generativa e vibe coding baseado nas **25 trilhas técnicas do Núcleo de Projetos (NP)** (92 cursos e 564 horas).
 
 Construído com **Next.js (App Router + exportação estática)**, **TypeScript**, **Tailwind CSS v4**, **Motion**, **Phosphor Icons** e camada de integração pronta para **Supabase** e publicação automática no **GitHub Pages** via **GitHub Actions**.
 
 ## Principais Recursos
 
 - **Modo Claro e Modo Escuro** calibrados em tokens **OKLCH**, sem flash no carregamento e respeitando a preferência do sistema.
-- **Catálogo completo (26 trilhas, 94 cursos, 573 horas)** com busca instantânea, filtro por 6 categorias, filtro de nível, filtro somente promoções e ordenação.
+- **Catálogo completo (25 trilhas, 92 cursos, 564 horas)** com busca instantânea, filtro por 6 categorias, filtro de nível, filtro somente promoções e ordenação.
 - **Precificação completa de loja:** valores de **R$ 50,00 a R$ 250,00**, com ofertas em **R$ 49,99**, **R$ 249,99** e cupons funcionais no carrinho (`CP2EJR10`, `VIBE15`, `INATEL20`).
 - **Ementa detalhada módulo a módulo:** cada trilha exibe todos os seus cursos com cargas horárias individuais que fecham exatamente o total da trilha.
 - **Carrinho lateral + Checkout de Matrícula + Área Minhas Matrículas** com acompanhamento interativo de módulos concluídos.

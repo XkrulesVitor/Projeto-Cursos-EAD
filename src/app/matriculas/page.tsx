@@ -132,7 +132,7 @@ export default function MatriculasPage() {
             Nenhuma matrícula registrada ainda
           </h2>
           <p className="mt-2 max-w-md text-sm text-[var(--muted)]">
-            Adicione qualquer uma das 26 trilhas do catálogo ao carrinho e conclua a
+            Adicione qualquer uma das {courses.length} trilhas do catálogo ao carrinho e conclua a
             matrícula para desbloquear sua grade interativa aqui.
           </p>
           <Link

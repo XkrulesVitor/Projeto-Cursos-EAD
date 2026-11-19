@@ -100,7 +100,7 @@ export function Footer() {
                   href="/#catalogo"
                   className="text-[var(--muted)] transition-colors hover:text-[var(--ink)]"
                 >
-                  Todas as 26 trilhas
+                  Todas as {CATALOG_STATS.totalTracks} trilhas
                 </Link>
               </li>
               <li>
