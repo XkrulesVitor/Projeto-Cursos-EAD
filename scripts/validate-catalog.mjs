@@ -36,6 +36,7 @@ let has4999 = false;
 let has24999 = false;
 let has50 = false;
 let has250 = false;
+const seenImages = new Set();
 
 for (const block of trackBlocks) {
   const idMatch = block.match(/^([^"]+)"/);
@@ -43,6 +44,23 @@ for (const block of trackBlocks) {
   const courseCount = Number(block.match(/courseCount:\s*(\d+)/)?.[1] ?? -1);
   const trackHours = Number(block.match(/totalHours:\s*(\d+)/)?.[1] ?? -1);
   const price = Number(block.match(/price:\s*([\d.]+)/)?.[1] ?? -1);
+  const imagePath = block.match(/image:\s*"([^"]+)"/)?.[1] ?? "";
+
+  if (!imagePath) {
+    console.error(`ERRO em "${id}": imagem ausente.`);
+    process.exit(1);
+  }
+  if (seenImages.has(imagePath)) {
+    console.error(`ERRO em "${id}": imagem repetida "${imagePath}". Cada trilha deve ter capa exclusiva.`);
+    process.exit(1);
+  }
+  seenImages.add(imagePath);
+
+  const diskImagePath = path.join(root, "public", imagePath.replace(/^\//, ""));
+  if (!fs.existsSync(diskImagePath)) {
+    console.error(`ERRO em "${id}": arquivo de imagem nao encontrado em ${diskImagePath}`);
+    process.exit(1);
+  }
 
   const modulesSection = block.split("modules: [")[1] ?? "";
   const moduleHours = [...modulesSection.matchAll(/hours:\s*(\d+)/g)].map((m) =>
